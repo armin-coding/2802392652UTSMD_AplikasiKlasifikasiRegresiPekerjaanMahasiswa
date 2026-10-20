@@ -1,0 +1,155 @@
+# Student Employment Prediction
+
+A machine learning web application that predicts student employment outcomes using **classification and regression**. Developed with Python and Streamlit, this project demonstrates how machine learning models can be integrated into an interactive application to support data-driven analysis of student employment prospects.
+
+## Overview
+
+Understanding student employment outcomes is an important part of evaluating career readiness and workforce preparation. This project explores how machine learning can be used to analyze student-related data and generate employment predictions.
+
+The application implements two predictive approaches:
+
+- **Classification:** Predicts an employment-related category based on the input features.
+- **Regression:** Estimates a numerical outcome related to student employment.
+
+By integrating both approaches into a single application, the project demonstrates the practical use of different supervised machine learning techniques for predictive analytics.
+
+## Features
+
+- Interactive web interface built with Streamlit.
+- Classification-based predictions.
+- Regression-based predictions.
+- Pre-trained machine learning models loaded from serialized files.
+- Python-based prediction workflow.
+- A unified application for exploring two predictive modeling approaches.
+
+## Tech Stack
+
+- **Python** — application development and model inference
+- **Pandas** — tabular data handling
+- **NumPy** — numerical operations
+- **Scikit-learn** — machine learning models and utilities
+- **Streamlit** — interactive web application
+
+## Project Structure
+
+```text
+2802392652UTSMD_AplikasiKlasifikasiRegresiPekerjaanMahasiswa/
+├── files/                  # Supporting project files
+├── app.py                  # Streamlit application
+├── classifier_model.pkl    # Serialized classification model
+├── regressor_model.pkl     # Serialized regression model
+└── requirements.txt        # Python dependencies
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Python installed on your computer
+- pip package manager
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/armin-coding/2802392652UTSMD_AplikasiKlasifikasiRegresiPekerjaanMahasiswa.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd 2802392652UTSMD_AplikasiKlasifikasiRegresiPekerjaanMahasiswa
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment.
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+Open the local URL provided by Streamlit, typically `http://localhost:8501`, in your browser.
+
+## Machine Learning Approach
+
+### 1. Classification
+
+Classification predicts a discrete category based on the input data.
+
+In the context of this project, the classification model is intended to predict an employment-related category for a student.
+
+### 2. Regression
+
+Regression predicts a continuous numerical value based on the input data.
+
+The regression model provides a complementary predictive approach by estimating a numerical employment-related outcome.
+
+### 3. Model Integration
+
+The application loads the two pre-trained models from separate serialized files:
+
+- `classifier_model.pkl`
+- `regressor_model.pkl`
+
+This separation allows the classification and regression models to be maintained and used independently within the same application.
+
+## Model Evaluation
+
+Classification and regression require different evaluation metrics.
+
+| Model | Potential evaluation metrics |
+|---|---|
+| Classification | Accuracy, precision, recall, F1-score, confusion matrix |
+| Regression | MAE, MSE, RMSE, R² |
+
+The appropriate metrics depend on the target variables, dataset, and evaluation methodology. Actual performance results should be reported after evaluating each model on an appropriate test set.
+
+## Limitations
+
+- Predictions depend on the quality and representativeness of the training dataset.
+- Model performance may vary when applied to students with characteristics not represented in the training data.
+- Predictions should not be interpreted as guarantees of future employment.
+- The reliability of the results depends on appropriate preprocessing, validation, and model evaluation.
+
+## Future Improvements
+
+- Document the dataset, target variables, and input features.
+- Include classification and regression evaluation results.
+- Add visualizations to help users interpret prediction outcomes.
+- Improve input validation and error handling.
+- Add automated tests for the prediction workflow.
+- Document the model training and preprocessing pipeline.
+- Deploy the application for public access.
+
+## Disclaimer
+
+This project is intended for educational purposes and demonstrates the application of supervised machine learning to student employment prediction. Its outputs are estimates generated by trained models and should not be treated as definitive assessments of an individual's employability.
+
+## Author
+
+**GitHub Repository:** [2802392652UTSMD_AplikasiKlasifikasiRegresiPekerjaanMahasiswa](https://github.com/armin-coding/2802392652UTSMD_AplikasiKlasifikasiRegresiPekerjaanMahasiswa)
